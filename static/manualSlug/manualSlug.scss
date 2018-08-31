@@ -1,0 +1,46 @@
+
+.box { // manage
+	.form-field__manualSlug {
+		display: block;
+	}
+}
+
+.form-field__manualSlug {
+	position: relative;
+	display: inline-block;
+	transition: all 0.3s linear;
+
+	&.loading {
+		opacity: 0.5;
+	}
+
+	input[type=text] {
+
+	}
+
+	.form-field__manualSlug__btn {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		display: block;
+		height: 100%;
+		width: 60px;
+		border-left: 1px solid #d2d6ff;
+		transition: all 0.1s linear;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			background: rgba(176,140,255,.05);
+		}
+
+		svg {
+			height: 80%;
+			max-width: 80%;
+		}
+	}
+}
